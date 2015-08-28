@@ -30,12 +30,32 @@ img {
 
 .menu {
   margin-bottom: 40px;
+  position: relative;
 }
 
+.btn-menu {
+  display: none;
+}
+
+  .btn-menu:hover {
+    background-color: #DFDFDF;
+  }
+
+  .btn-menu:active {
+    background-color: #CECECE;
+  }
+
+  .btn-menu hr {
+    border-left: 0;
+  }
+
 .navbar {
-  float: right;
   font-size: 24px;
   margin: 25px;
+  margin-right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .navbar a {
@@ -53,7 +73,6 @@ img {
 }
 
 .unit {
-  /*display: flex;*/
   max-width: calc(99%/3);
   display: inline-block;
   vertical-align: top;
@@ -72,4 +91,56 @@ img {
 iframe {
   width: 100%;
   margin-top: 60px;
+  height: 519px;
 }
+
+@media (max-width: 1085px) {
+  .container {
+    width: 90%;
+    position: relative;
+  }
+
+  .btn-menu {
+    width: 40px;
+    border-radius: 5px;
+    background-color: #eee;
+    outline: none;
+    border: 1px solid #BFBFBF;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+    display: inherit;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .unit {
+    display: inherit; 
+    text-align: left; 
+    max-width: 100%;
+  }
+
+  iframe {
+    height: auto;
+    min-height: 300px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
